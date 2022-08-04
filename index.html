@@ -5,38 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <title>Sign-up form</title>
 </head>
 <body>
-    <div class="flex-container">
-
-        <div class="left-side">
-                <img src="matt-gross-uPa8mFbySYw-unsplash.jpg" alt="" class="background">
-        </div>
-
-        <div class="right-side">
-            <header>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint enim mollitia neque est odio impedit accusamus distinctio sit necessitatibus eligendi. Odit suscipit nesciunt et placeat sit amet iusto provident commodi.</p>
-            </header>
-            <h1 class="mot">Let's do this!</h1>
-            <div class="container">
-                <div class="inputs">
-                    <input type="text" class="data">
-                    <input type="text" class="data">
-                </div>
-                <div class="inputs">
-                    <input type="text" class="data">
-                    <input type="text" class="data">
-                </div>
-                <div class="inputs">
-                    <input type="text" class="data">
-                    <input type="text" class="data">
+        <!-- side image on the left-->
+            <div id="sidebar-image">
+                <div class="bar">
+                    <img src="logo.svg" alt="logo">
+                    <div class="credit">Mat Gross</div>
                 </div>
             </div>
-            <botton class="btn"></botton>
-            <footer>all rights are reseved &copy; 2022</footer>
-            
+        <!-- signing form on the right -->
+        <div id="form-container">
+            <!-- header -->
+            <header>
+                <p id="paragraph">
+                    This is not a real online Service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                   <span> Sign up <i>now</i> to get </span>
+                </p>
+            </header>
+        <!-- The form -->
+        <form>
+            <h1>Let's do this!</h1>
+            <div class="form-section">
+                <div class="left-inputs">
+        
+                    <div id="input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" placeholder="name">
+                    </div>
+        
+                    <div id="input">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="example@example.example">
+                    </div>
+        
+                    <div id="input">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="**************">
+                    </div>
+        
+                </div>
+        
+                <div class="right-inputs">
+        
+                    <div id="input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+        
+                    <div id="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" >
+                    </div>
+        
+                    <div id="input">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" placeholder="************">
+                    </div>
+        
+                </div>
+            </div>
+    
+        </form>
+        <div class="button">
+            <button>Create account</button>
         </div>
-    </div>
+    
+        <div class="msg">
+            <p class="option">Already have an account? <span>Log in</span></p>
+        </div>
+        </div>
 </body>
 </html>
