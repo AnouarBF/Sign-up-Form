@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="./main.js" defer></script>
     <title>Sign-up form</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
                 </p>
             </header>
         <!-- The form -->
-        <form>
+        <form action="/index.html" method="get">
             <h1>Let's do this!</h1>
             <div class="form-section">
                 <div class="left-inputs">
@@ -38,12 +39,12 @@
         
                     <div id="input">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="example@example.example">
+                        <input type="email" placeholder="example@example.example" id="email">
                     </div>
         
                     <div id="input">
                         <label for="password">Password</label>
-                        <input type="password" placeholder="**************">
+                        <input type="password" placeholder="**************" id="password">
                     </div>
         
                 </div>
@@ -57,21 +58,20 @@
         
                     <div id="input">
                         <label for="phone">Phone Number</label>
-                        <input type="text" >
+                        <input type="number" placeholder="Your phone number" id="phone">
                     </div>
         
                     <div id="input">
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" placeholder="************">
+                        <input type="password" placeholder="************" id="confirm-password">
                     </div>
         
                 </div>
             </div>
-    
+            <div class="button">
+                <button type="submit" div="submit">Create account</button>
+            </div>
         </form>
-        <div class="button">
-            <button>Create account</button>
-        </div>
     
         <div class="msg">
             <p class="option">Already have an account? <span>Log in</span></p>
